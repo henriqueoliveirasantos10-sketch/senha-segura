@@ -1,0 +1,135 @@
+:root {
+    --cor-fundo: #0c1020;
+    --cor-card: #161c33;
+    --cor-azul-alura: #1875e5;
+    --cor-azul-hover: #145cb8;
+    --cor-texto: #ffffff;
+    --cor-texto-secundario: #9aa0b4;
+    --cor-input: #0b0e1a;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: var(--cor-card);
+    padding: 30px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 450px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+.titulo {
+    font-size: 1.8rem;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.subtitulo {
+    color: var(--cor-texto-secundario);
+    font-size: 0.9rem;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.campo-senha {
+    display: flex;
+    background-color: var(--cor-input);
+    border-radius: 6px;
+    padding: 8px 12px;
+    margin-bottom: 20px;
+    border: 1px solid #2d3654;
+}
+
+#input-senha {
+    background: none;
+    border: none;
+    color: #00ff88;
+    font-size: 1.1rem;
+    width: 100%;
+    outline: none;
+}
+
+#btn-copiar {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.1rem;
+}
+
+.controle-comprimento {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.botoes-comprimento {
+    display: flex;
+    gap: 10px;
+}
+
+.btn-controle {
+    background-color: var(--cor-azul-alura);
+    color: white;
+    border: none;
+    width: 35px;
+    height: 35px;
+    border-radius: 4px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.btn-controle:hover {
+    background-color: var(--cor-azul-hover);
+}
+
+.opcoes-caracteres {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 25px;
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.parametro-senha {
+    width: 18px;
+    height: 18px;
+    accent-color: var(--cor-azul-alura);
+}
+
+.btn-principal {
+    width: 100%;
+    background-color: var(--cor-azul-alura);
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.btn-principal:hover {
+    background-color: var(--cor-azul-hover);
+}

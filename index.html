@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de senhas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container">
+        <section class="conteudo">
+            <h1 class="titulo">Gerador de senhas</h1>
+            <p class="subtitulo">Utilizando matemática para programar senhas seguras</p>
+
+            <div class="campo-senha">
+                <input type="text" id="input-senha" readonly placeholder="Sua senha aparecerá aqui...">
+                <button id="btn-copiar" title="Copiar senha">📋</button>
+            </div>
+
+            <div class="controles">
+                <div class="controle-comprimento">
+                    <p class="texto-comprimento">Comprimento da senha: <span id="valor-comprimento">12</span></p>
+                    <div class="botoes-comprimento">
+                        <button class="btn-controle" id="btn-diminuir">-</button>
+                        <button class="btn-controle" id="btn-aumentar">+</button>
+                    </div>
+                </div>
+
+                <div class="opcoes-caracteres">
+                    <label class="checkbox-container">
+                        <input type="checkbox" class="parametro-senha" id="chk-maiusculas" checked> Letras Maiúsculas
+                    </label>
+                    <label class="checkbox-container">
+                        <input type="checkbox" class="parametro-senha" id="chk-minusculas" checked> Letras Minúsculas
+                    </label>
+                    <label class="checkbox-container">
+                        <input type="checkbox" class="parametro-senha" id="chk-numeros" checked> Números
+                    </label>
+                    <label class="checkbox-container">
+                        <input type="checkbox" class="parametro-senha" id="chk-simbolos" checked> Símbolos
+                    </label>
+                </div>
+            </div>
+
+            <button id="btn-gerar" class="btn-principal">Gerar Senha</button>
+        </section>
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>
